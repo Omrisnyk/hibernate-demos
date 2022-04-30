@@ -8,14 +8,16 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "6.1.6",
     "@angular/common": "6.1.6",
     "@angular/compiler": "6.1.6",
-    "@angular/core": "6.1.6",
+    "@angular/core": "11.0.5",
     "@angular/forms": "6.1.6",
     "@angular/http": "6.1.6",
     "@angular/platform-browser": "6.1.6",
@@ -23,9 +25,10 @@
     "@angular/router": "6.1.6",
     "@ng-bootstrap/ng-bootstrap": "^3.2.0",
     "core-js": "^2.4.1",
-    "npm": "^5.6.0",
+    "npm": "^7.0.0",
     "rxjs": "^6.3.2",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",
@@ -48,5 +51,6 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "2.9.2"
-  }
+  },
+  "snyk": true
 }
